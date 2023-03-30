@@ -3,7 +3,7 @@ import axios from "axios";
 const fetchFromAPI = axios.create({
   baseURL: "https://youtube.googleapis.com/youtube/v3/",
   params: {
-    key: "AIzaSyDYcvuiqb5tTdNctU8Mh2Xa9gme1kpppyY",
+    key: process.env.REACT_APP_RAPID_API_KEY,
   },
 });
 
